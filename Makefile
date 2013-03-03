@@ -1,7 +1,7 @@
 
 all: bquery.min.js
 
-bquery.js: src/bQuery.coffee Makefile
+bquery.js: src/bquery.coffee Makefile
 	coffee -cs < $< > $@
 
 bquery.min.js: bquery.js
